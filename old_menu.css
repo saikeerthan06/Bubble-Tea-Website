@@ -1,0 +1,357 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* Root Variables for Consistency */
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Container */
+.container {
+    width: 1266px; /* Fixed width for larger screens */
+    margin: 20px 0;
+    /* Optional: Add shadow and border if needed */
+    /* box-shadow: var(--box-shadow);
+    border: 1px solid var(--nav-border); */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 221, 205, 1);
+    padding: 15px 30px;
+    border-bottom: 2px solid #ddd;;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+/* Logo Styling */
+nav .logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e03e00;;
+    color: #fff;
+}
+
+/* Menu Heading */
+.h2-menu {
+    margin-top: 20px;
+}
+
+.h2-menu h1 {
+    font-family: 'Merienda', cursive;;
+    font-size: 4.8em;
+    text-align: center;
+    color: chocolate;
+    margin-bottom: 20px;
+}
+
+.milk-tea-heading,
+.brewed-tea-heading,
+.fruit-tea-heading,
+.smoothie-tea-heading,
+.oreo-smash-heading {
+    font-family: "Cedarville Cursive", serif;
+    font-size: 2.4em;
+    text-align: center;
+    color: teal;
+    margin-bottom: -40px;
+    margin-top: 60px;
+}
+
+
+/* Milk Tea Options Container */
+.milk-tea-options,
+.brewed-tea-options,
+.fruit-tea-options,
+.smoothie-tea-options,
+.oreo-smash-options {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 40px; /* Reduced gap for better scrolling experience */
+    padding: 20px; /* Adjusted padding */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    border: 2px solid rgb(168, 168, 170);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* background-image: url("../Images/menu-background.jpeg"); */
+    margin-top: 40px;
+
+}
+
+.milk-tea-options {
+    background-image: url("./menu-images/backgrounds/menu-background2.jpeg");
+}
+
+.brewed-tea-options {
+    background-image: url("./menu-images/backgrounds/brewed-tea-background.jpg");
+}
+
+.fruit-tea-options {
+    background-image: url("./menu-images/backgrounds/fruit-tea-background.jpg");
+}
+
+.smoothie-tea-options {
+    background-image: url("./menu-images/backgrounds/smoothie-tea-background.jpg");
+}
+
+.oreo-smash-options {
+    background-image: url("./menu-images/backgrounds/oreo-smash-background.jpg")
+}
+
+/* Milk Tea Option Styling */
+.milk-tea-option,
+.brewed-tea-option,
+.fruit-tea-option,
+.smoothie-tea-option,
+.oreo-smash-option {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 300px; /* Fixed width for consistency */
+    border: 2px solid #ff4500;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start; /* For scroll snapping */
+}
+
+.milk-tea-option:hover,
+.brewed-tea-option:hover,
+.fruit-tea-option:hover,
+.smoothie-tea-option:hover,
+.oreo-smash-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Option Image */
+.option-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px; /* Slightly rounded corners for images */
+    margin-bottom: 15px;
+}
+
+/* Option Heading */
+.option-heading h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Option Description */
+.option-description p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.popup-link {
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Option Button */
+.option-button button {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.option-button button:hover {
+    background-color: #e03e00;
+}
+
+/* Popup Overlay */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /*Sit on top*/
+}
+
+/* Display the popup when targeted */
+.popup:target {
+    display: flex;
+}
+
+
+/* Popup Content */
+.popup-content {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Popup Image */
+.popup-image {
+    width: 40%; /* 1/4 of the popup width */
+}
+
+.popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Popup Details */
+.popup-details {
+    width: 75%; /* Remaining 3/4 of the popup width */
+    padding: 20px;
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+.popup-details h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.popup-details p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsive Design for Popup */
+@media (max-width: 768px) {
+    .popup-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .popup-image, .popup-details {
+        width: 100%;
+    }
+
+    .popup-image img {
+        height: 200px;
+    }
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .milk-tea-options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .milk-tea-option {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .milk-tea-option {
+        width: 100%;
+    }
+
+    .option-image img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .milk-tea-options {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .option-image img {
+        height: 200px;
+    }
+}

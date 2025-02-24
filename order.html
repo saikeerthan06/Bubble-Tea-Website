@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>232594T Order Page</title>
+        <link rel="stylesheet" href="/CSS/order.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Nunito:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/Images/aboutus/doncha_logo.jpg" alt="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                    <li><a href="order.html" target="_blank">Order</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div class="order-heading">
+                <h2>Order Page</h2>
+            </div>
+
+            <div class="order-main-page">
+                <img src="/Images/Order-Page/order-main-pic.jpg" alt="order-page-main-pic">
+            </div>
+
+            <div class="order-page-heading">
+                <p>
+                    Ready to satisfy your cravings? Browse our menu and choose from a variety of delicious bubble tea options, snacks, and more. Whether you’re in the mood for something refreshing or indulgent, ordering is quick and easy. Get your favorite treats delivered right to your doorstep or pick them up in-store—it’s that simple!
+                </p>
+            </div>
+
+            <div class="order-page-buttons">
+                <a href="menu.html">
+                    <button class="view-menu-button">View Menu</button>
+                </a>
+               
+                <a href="#order-form">
+                    <button class="order-now-button">Order Now</button>
+                </a>
+            </div>
+            <hr style="margin-top: 30px;">
+            <div class="best-seller">
+                <h1 style="margin-top: -20px;">Best-Sellers!</h1>
+
+                <div class="best-seller-grid">
+                    <div class="promo-image">
+                        <img src="/Images/Order-Page/poster/new-pearl-milk.jpg">
+
+                        <div class="pearl-milk-text">
+                            <h1>Savour The Momment</h1>
+                            <h2>With</h2>
+                            <h3 class="first-h3">Pearl Milk Tea</h3>
+
+                            <h3 class="second-h3">Refreshing & Creamy!</h3>
+                        </div>
+                    </div>
+
+                    <div class="promo-image">
+                        <img src="/Images/Order-Page/poster/new-strawberry.jpg" alt="strawberry-promo">
+
+                        <div class="strawberry-text">
+                            <h1>Refresh with</h1>
+                            <h2>STRAWBERRY TEA</h2>
+                            <h3>Fruity, Refreshing and Sweet!</h3>
+                        </div>
+                    </div>
+
+                    <div class="promo-image">
+                        <!-- <img src="./Images/Order-Page/poster/oreo-promo.jpg" alt="oreo-promo"> -->
+                        <img src="./Images/Order-Page/poster/new-order-choco.jpg" alt="oreo-promo">
+
+                        <div class="choco-text">
+                            <h1>Indulge In</h1>
+                            <h2>Choco Oreo Smash</h2>
+                            <h3>Creamy, Crunchy and Irresisitbly Delicious!</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>    
+
+            <div class="order-form-heading">
+                <h3>Order Form</h3>
+            </div>
+
+            <form id="order-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                <!-- Food Item Selection -->
+                <label for="food-item">Select Food Item:</label>
+                <select id="food-item" name="food-item" required>
+                    <option value="">Select You Item:</option>
+
+                    <optgroup label="Milk-Tea Series">
+                        <option value="classic-milk-tea">Classic Milk Tea</option>
+                        <option value="honey-milk-tea">Honey Milk Tea</option>
+                        <option value="oolong-milk-tea">Oolong Milk Tea</option>
+                        <option value="pearl-milk-tea">Pearl Milk Tea &starf;;</option>
+                        <option value="earl-grey-milk">Early Gret Milk Tea</option>
+                        <option value="green-milk-tea">Green Milk Tea</option>
+                    </optgroup>
+
+                    <optgroup label="Brewed-Tea Series">
+                        <option value="Earl-Grey-Tea">Earl Grey Tea</option>
+                        <option value="Honey-Green-Tea">Honey Green Tea</option>
+                        <option value="Jasmine-Green-Tea">Jasmine Green Tea</option>
+                        <option value="honey-green/oolong-tea">Honey Gree/Oolong Tea</option>
+                    </optgroup>
+
+                    <optgroup label="Fruit-Tea Series">
+                        <option value="lychee-tea">Lychee Tea</option>
+                        <option value="mango-tea">Mango Tea</option>
+                        <option value="passionfruit-tea">PassionFruit Tea</option>
+                        <option value="strawberry-tea">Strawberry Tea</option>
+                        <option value="wintermelon-tea">Wintermelon Tea</option>
+                    </optgroup>
+
+                    <optgroup label="Smoothie-Tea Series">
+                        <option value="lychee-smoothie">Lychee Smoothie</option>
+                        <option value="Mango-Smoothie">Mango Smoothie</option>
+                        <option value="matcha-smooothie">Matcha Smoothie</option>
+                        <option value="peach-smoothie">Peach Smoothie</option>
+                        <option value="strawberry-smoothie">Strawberry Smoothie</option>
+                        <option value="taro-smoothie">Taro Smoothie</option>
+                    </optgroup>
+
+                    <optgroup label="Oreo-Smash Series">
+                        <option value="banan-oreo-smash">Banana Oreo Smash</option>
+                        <option value="chocolate-oreo-smash">Chocolate Oreo Smash</option>
+                        <option value="minty-oreo-smash">Minty Oreo Smash</option>
+                        <option value="strawberry-oreo-smash">Strawberry Oreo Smash
+                    </optgroup>
+                </select>
+            
+                <!-- Quantity Selection -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            
+                <!-- Special Requests -->
+                <label for="special-request">Special Requests / Dietary Preferences:</label>
+                <textarea id="special-request" name="special-request" rows="4" placeholder="Enter any preferences or requests..."></textarea>
+            
+                <!-- Submit Button -->
+                <button type="submit" class="submit-order-button">Submit Order</button>
+            </form>
+        </div>
+    </body>
+</html>

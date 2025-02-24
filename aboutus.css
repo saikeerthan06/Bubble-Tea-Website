@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nunito-uniquifier {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.merienda-uniquifier {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    width: 90%; 
+    max-width: 1266px; 
+    background: #fff;
+    margin: 20px auto; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223,221,205,255);
+    padding: 15px 30px;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+
+
+.main-image {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    position: relative; 
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    transition: filter 0.3 ease;
+}
+
+.main-image-text {
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.6);
+    color: beige;
+    opacity: 0; 
+    text-align:center;
+    transition: opacity 0.3s ease; 
+    box-sizing: border-box; 
+    max-width: 100%;
+    align-content: center;
+    width: 87%;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.4em;
+}
+
+.main-image-text h1 {
+    font-size: 2.5em;
+    font-family: "Merienda", cursive;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.main-image:hover .main-image-text {
+    opacity: 1; 
+}
+
+.main-image:hover img {
+    filter: blur(4px);
+}
+
+.crew h2 {
+    margin-top: 40px;
+    font-family: "Merienda", cursive;
+    font-size: 3em;
+    color: #c76ffe;
+    text-align: center;
+}
+
+.crew-images {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.crew-member img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* 
+.crew-member {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.crew-member.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* map styling */
+
+.map-section h1 {
+    font-family: "Merienda", cursive;
+    font-size: 4em;
+    color: #c76ffe;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.map {
+    margin-top: 90px;
+    text-align: center;
+}
+
+/* .interactive-map {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+} */
+
+iframe {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
+    /* height: auto;
+    width: 100%; */
+}
+
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review-start {
+    position: relative;
+    max-width: 500px;
+    background: #fdfaf6; 
+    border: 1px solid #f3e5d8; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.review-start:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-start img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.review-start-stars {
+    color: #f1c40f;
+    font-size: 1.5em;
+}
+
+
+.review-start-paragraph p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+}
+
+.review-start-name {
+    margin-top: 20px;
+}
+.review-start-name h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #0b5345; 
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-media-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.social-media-icons div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-media-icons img {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #ff4500;
+}
+
+.social-media h2 {
+    font-family: "Merienda", cursive;
+    font-size: 3.5em;
+    color: #c76ffe;
+    text-align: center;
+}
+
+.instagram-icon{
+    scale: 3.0;
+    margin-top: 100px;
+    margin-right: 90px;
+}
+
+.facebook-icon {
+    scale: 3.0;
+    margin-top: 100px;
+    margin-left: 240px;
+}
+
+.instagram-icon img{
+    margin-left: 20px;
+}
+
+.facebook-icon img{
+    margin-left: 40px;
+}
+
+.reviews h2 {
+    font-family: "Merienda", cursive;
+    font-size: 3em;
+    color: #c76ffe;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: rgba(223,221,205,255);
+    height: 30px;
+    width: auto;
+    border-radius: 7px;
+}
+
+footer p{ 
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+.crew-member {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden; /
+}
+
+
+.crew-member img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: filter 0.3s ease-in-out;
+}
+
+.workers-text {
+    position: absolute;
+    top: 0;        
+    left: 0;
+    width: 100%;    
+    height: 85%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.crew-member:hover img {
+    filter: blur(4px);
+}
+
+.crew-member:hover .workers-text  {
+    opacity: 1;
+}
